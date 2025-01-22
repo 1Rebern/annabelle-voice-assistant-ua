@@ -1,7 +1,7 @@
 # annabelle-voice-assistant-ua
 Voice assistant in Ukrainian
 
-# Technologies used:
+# Technologies used
 Programming language:
 * Python.
   
@@ -21,5 +21,5 @@ Libraries:
 Python system modules:
 * os — used to open files, check the existence of directories and create them.
 
-# How the program works:
+# How the program works
 https://github.com/user-attachments/assets/6b2a610d-a983-4712-a4b7-e34fb471de3a
