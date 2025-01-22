@@ -6,21 +6,20 @@ Programming language:
 * Python.
   
 Libraries:
-* <a href = "">ukrainian_tts - бібліотека для синтезу української мови, використовується для генерації аудіофайлів із тексту за допомогою голосового синтезатору.</a>
-* number_to_text_ua - самописна бібліотека для конвертації чисел в текст українською мовою.
-* text_to_number_ua - самописна бібліотека для конвертації чисел, записаних словами, назад в цифри.
-* time_to_text_ua - самописна бібліотека для відображення часу у вигляді тексту.
-* rapidfuzz - використовується для нечіткого порівняння тексту.
-* vosk - використовується для розпізнавання мови.
-* pyaudio - використовується для роботи з аудіопотоками.
-* sounddevice - використовується для вводу/виводу звуку з використанням звукозаписувальних пристроїв.
-* wave - використовується для роботи з WAV-файлами.
-* keyboard - використовується для зчитування натискань клавіш.
-* re - використовується для фільтрації та очищення введеного тексту.
+* <a href = "https://github.com/robinhad/ukrainian-tts">ukrainian_tts</a> - library for Ukrainian language synthesis, used to generate audio files from text using a voice synthesizer.
+* number_to_text_ua - a self-written library for converting numbers to text in Ukrainian.
+* text_to_number_ua - a self-writing library for converting numbers written in words back to numbers.
+* time_to_text_ua - self-writing library for displaying time in the form of text.
+* rapidfuzz - used for fuzzy text comparison.
+* vosk - used for speech recognition.
+* pyaudio - used to work with audio streams.
+* sounddevice - used for audio input/output using audio recording devices.
+* wave - used to work with WAV files.
+* keyboard - is used to read keystrokes.
+* re - is used to filter and clean up the entered text.
 
 Python system modules:
-* os — використовується для відкриття файлів, перевірки існування директорій та їх створення.
+* os — used to open files, check the existence of directories and create them.
 
 # How the program works:
 https://github.com/user-attachments/assets/6b2a610d-a983-4712-a4b7-e34fb471de3a
-
