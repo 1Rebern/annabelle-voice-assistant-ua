@@ -19,7 +19,7 @@ Libraries:
 * re - is used to filter and clean up the entered text.
 
 Python system modules:
-* os — used to open files, check the existence of directories and create them.
+* os - used to open files, check the existence of directories and create them.
 
 # How the program works
 https://github.com/user-attachments/assets/6b2a610d-a983-4712-a4b7-e34fb471de3a
