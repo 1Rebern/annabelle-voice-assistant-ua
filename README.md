@@ -49,7 +49,6 @@ The project is continuously evolving and the current version is designed to be f
                   │ PC Command   │
                   │ / Action     │
                   └──────────────┘
-                         
                          │
                          ▼
                   ┌──────────────┐
