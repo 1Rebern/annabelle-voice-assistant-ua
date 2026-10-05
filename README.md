@@ -1,25 +1,143 @@
-# annabelle-voice-assistant-ua
-Voice assistant in Ukrainian
+# Annabelle — Ukrainian Voice Assistant
 
-# Technologies used
-Programming language:
-* Python.
-  
-Libraries:
-* <a href = "https://github.com/robinhad/ukrainian-tts">ukrainian_tts</a> - library for Ukrainian language synthesis, used to generate audio files from text using a voice synthesizer.
-* number_to_text_ua - a self-written library for converting numbers to text in Ukrainian.
-* text_to_number_ua - a self-writing library for converting numbers written in words back to numbers.
-* time_to_text_ua - self-writing library for displaying time in the form of text.
-* rapidfuzz - used for fuzzy text comparison.
-* vosk - used for speech recognition.
-* pyaudio - used to work with audio streams.
-* sounddevice - used for audio input/output using audio recording devices.
-* wave - used to work with WAV files.
-* keyboard - is used to read keystrokes.
-* re - is used to filter and clean up the entered text.
+A voice assistant in Ukrainian designed to interact with a computer using voice commands.
 
-Python system modules:
-* os - used to open files, check the existence of directories and create them.
+The project combines speech recognition, Ukrainian language processing, fuzzy text matching, audio input/output and computer interaction.
 
-# How the program works
+---
+
+## Project Goal
+
+The goal of the project was to develop a practical voice assistant for computer interaction while exploring speech recognition, audio processing and Ukrainian language processing.
+
+The project is continuously evolving and the current version is designed to be flexible enough for further development.
+
+---
+
+## System Architecture
+
+```text
+                  ┌──────────────┐
+                  │  Microphone  │
+                  └──────┬───────┘
+                         │
+                         ▼
+                  ┌──────────────┐
+                  │ Audio Input  │
+                  └──────┬───────┘
+                         │
+                         ▼
+                  ┌──────────────┐
+                  │     Vosk     │
+                  │     ASR      │
+                  └──────┬───────┘
+                         │
+                         ▼
+                  ┌──────────────┐
+                  │ Text Filter  │
+                  │    re        │
+                  └──────┬───────┘
+                         │
+                         ▼
+                ┌──────────────────┐
+                │ Command Matching │
+                │    RapidFuzz     │
+                └────────┬─────────┘
+                         │
+                         ▼
+                  ┌──────────────┐
+                  │ PC Command   │
+                  │ / Action     │
+                  └──────────────┘
+                         
+                         │
+                         ▼
+                  ┌──────────────┐
+                  │ Ukrainian TTS│
+                  └──────────────┘
+```
+
+---
+
+## Software
+
+**Programming language:**
+
+- Python
+
+**Libraries:**
+
+- `ukrainian_tts` — Ukrainian speech synthesis
+- `number_to_text_ua` — number-to-text conversion
+- `text_to_number_ua` — conversion of written numbers back to numeric values
+- `time_to_text_ua` — conversion of time into text
+- `rapidfuzz` — fuzzy text comparison
+- `vosk` — speech recognition
+- `pyaudio` — audio streams
+- `sounddevice` — audio input/output
+- `wave` — WAV file processing
+- `keyboard` — keyboard interaction
+- `re` — text filtering and processing
+
+**Python system modules:**
+
+- `os`
+
+---
+
+## Custom Ukrainian Language Libraries
+
+One of the main parts of the project is a set of self-developed libraries for Ukrainian language processing:
+
+### `number_to_text_ua`
+
+Converts numbers into Ukrainian text.
+
+### `text_to_number_ua`
+
+Converts Ukrainian numbers written as words back into numeric values.
+
+### `time_to_text_ua`
+
+Converts time values into textual Ukrainian representation.
+
+These components can be reused independently of the voice assistant.
+
+---
+
+## How the Program Works
+
+The assistant captures speech from an audio input device, converts it into text using Vosk and processes the recognized command.
+
+The resulting text is cleaned and compared against available commands using text-processing techniques and fuzzy matching.
+
+After identifying the required command, Annabelle performs the corresponding action on the computer.
+
+The assistant can also generate Ukrainian speech output using the text-to-speech component.
+
+---
+
+## Demonstration
+
+The current project demonstration:
+
 https://github.com/user-attachments/assets/6b2a610d-a983-4712-a4b7-e34fb471de3a
+
+---
+
+## Engineering Scope
+
+The project combines:
+
+- speech recognition;
+- speech synthesis;
+- Ukrainian language processing;
+- fuzzy string matching;
+- real-time audio input/output;
+- keyboard interaction;
+- command processing.
+
+---
+## Project Status
+
+**Status:** Active development / evolving project.
